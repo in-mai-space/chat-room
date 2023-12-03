@@ -1,6 +1,6 @@
 # chat-room: Technical Challenge for Code4Community
 
-**Overview**
+<h1>Overview</h1>
 <p>This is a chat room that allows users to sign up, log in, log out, post under a username and chat with other users from different devices.</p>
 <ul>
 <li>Languages: Python, Javascript, HTML</li>
@@ -11,7 +11,7 @@
 <p>Another technology that I used is Socket.IO. I encountered that problem of needing to refresh the page to see newest messages form other users. Thus, since socket.io supports real time and bi-directional communication between servers and users, all users can view messages from other users without the need to refresh.</p>
 <br>
 
-**Components and Interactions**
+<h1>Components and Interactions</h1>
 <p>My web app is comprised of two main parts:</p>
 <ul>
     <li>HTML templates (feed.html, login.html, sign.html): These files store the front-end interface that users interact with and Javascript code that connects with the server.</li>
@@ -19,7 +19,7 @@
 </ul>
 <br>
 
-**Requirements**
+<h1>Requirements</h1>
 <p>Requirement 1: Users should be able to type a message and post it to the message board.</p>
 <ul>
     <li>Users cannot post non-empty message since there is a conditional in chatroom.py that new messages can only be posted if its length is larger than 0.</li>
@@ -36,11 +36,11 @@
 </ul>
 <br>
 
-**Additional Features**
+<h1>Additional Features</h1>
 <p>Another feature that I implement is allowing users to signup, login, logout and post under a username, so users can see who sent the messages.</p>
 <br>
 
-**How to Install and Run the Project**
+<h1>Installation and Running the Program</h1>
 - IDE: VSCode
 - install Flask
 - install jinjja2
