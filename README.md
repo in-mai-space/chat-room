@@ -20,17 +20,17 @@
 <br>
 
 <h2>Requirements</h2>
-<p>Requirement 1: Users should be able to type a message and post it to the message board.</p>
+<b><p>Requirement 1: Users should be able to type a message and post it to the message board.</p></b>
 <ul>
     <li>Users cannot post non-empty message since there is a conditional in chatroom.py that new messages can only be posted if its length is larger than 0.</li>
     <li>There is also a text displayed how many characters users have left. When the text in the box reaches limit of 128 characters, users cannot type more, since there is a Javascript function in feed.html that enforces the limit. Users will not be able to type a string that has length longer than 128 characters.</li>
 </ul>
-<p>Requirement 2: Users should be able to see messages on the message board from most to least recent as the latest message will be append to the beginner of list of messages.</p>
+<b><p>Requirement 2: Users should be able to see messages on the message board from most to least recent as the latest message will be append to the beginner of list of messages.</p></b>
 <ul>
     <li>I created a list of messages, as a user posts a new string, it is appended in the beginning for the list in chatroom.py, and all the messages in the list will be displayed on the feed using for loop in feed.html</li>
     <li>When user waits for communication from the server, the latest message from other users will also be prepend to the container of all text messages from Javascript function from feed.html</li>
 </ul>
-<p>Requirement 3: Users on different computers should be able to post to the same board and view each other’s messages.</p>
+<b><p>Requirement 3: Users on different computers should be able to post to the same board and view each other’s messages.</p></b>
 <ul>
     <li>Since users can sign up under a username, and all their messages are stored in a list, all past messages stored in list will be shown. SocketIO also allows users to see other users' messages the instant they send it without refreshing.</li>
 </ul>
