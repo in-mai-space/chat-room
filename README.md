@@ -41,7 +41,6 @@
 <ul>
     <li>Since users can sign up under a username, and all their messages are stored in a list, all past messages stored in list will be shown. SocketIO also allows users to see other users' messages the instant they send it without refreshing.</li>
 </ul>
-<img width="846" alt="Screenshot 2023-12-02 at 3 42 50 PM" src="https://github.com/in-mai-space/chat-room/assets/123816878/2a7827aa-e95c-491d-a228-0ffc73d937a6">
 <br>
 
 <h2>Additional Feature</h2>
