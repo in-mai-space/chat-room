@@ -8,7 +8,7 @@
 <li>Other Tools: Socket.IO library, jQuery library, Jinjja2 web template</li>
 </ul>
 <p>I used Python since it is a beginner friendly language that I am more familiar with, and Flask framework which is helpful and simple to build small web apps. While, Bootstrap allows me to modify the front-end design from libraries without building CSS from scartch. Jinjja2 web template is a way to incorporate Python code into HTML file.</p>
-<p>Another technology that I used is Socket.IO. I encountered that problem of needing to refresh the page to see newest messages form other users. Thus, since socket.io supports real time and bi-directional communication between servers and users, all users can view messages from other users without the need to refresh.</p>
+<p>Another technology that I used is Socket.IO. I encountered the problem of needing to refresh the page to see newest messages form other users. Thus, since socket.io supports real time and bi-directional communication between servers and users, all users can view messages from other users without the need to refresh.</p>
 <br>
 
 <h2>Components and Interactions</h2>
