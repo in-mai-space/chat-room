@@ -36,8 +36,8 @@
 </ul>
 <br>
 
-<h2>Additional Features</h2>
-<p>Another feature that I implement is allowing users to signup, login, logout and post under a username, so users can see who sent the messages.</p>
+<h2>Additional Feature</h2>
+<p>Users can signup, login, logout and post under a username.</p>
 <br>
 
 <h2>Installation and Running the Program</h2>
