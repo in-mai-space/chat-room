@@ -48,11 +48,20 @@
 <br>
 
 <h2>Installation and Running the Program</h2>
-- IDE: VSCode
-- install Flask
-- install jinjja2
-- must have Python support
-- can run on either on of these two links
-    http://127.0.0.1:8123
-    http://10.110.197.207:8123
+<h5>Installation Guide</h5>
+<ol>
+    <li>Install an IDE (e.g. VSCode)</li>
+    <li>Install Python https://www.python.org/downloads/</li>
+    <li>can either install these in terminal for Mac, or create (python -m venv venv) and activate a new environment (venv\Scripts\activate) in terminal of IDE</li>
+    <li>Install Flask: pip install -U Flask</li>
+    <li>Install Socket.io: pip install flask-socketio</li>
+    <li>Install jinjja2: pip install -U Jinja2</li>
+</ol>
+
+<h5>How to Run the Program</h5>
+<ol>
+    <li>download or clone the project from the repository</li>
+    <li>run chatroom.py in IDE (e.g. VSCode)</li>
+    <li>access app through the link: http://10.110.197.207:8123</li>
+</ol>
 
