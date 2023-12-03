@@ -1,7 +1,7 @@
-# chat-room
+# chat-room: Technical Challenge for Code4Community
 
 **A high level overview**
-This is a chat room that allows users to sign up, log in, log out, post under a username and chat with other users from different devices.
+<p>This is a chat room that allows users to sign up, log in, log out, post under a username and chat with other users from different devices.</p>
 - Languages: Python, Javascript, HTML
 - Framework: Flask, Bootstrap
 - Other Tools: Socket.IO library, Jinjja2 web template
