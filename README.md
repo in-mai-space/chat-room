@@ -9,6 +9,7 @@
 </ul>
 <p>I used Python since it is a beginner friendly language that I am more familiar with, and Flask framework which is helpful and simple to build small web apps. While, Bootstrap allows me to modify the front-end design from libraries without building CSS from scartch. Jinjja2 web template is a way to incorporate Python code into HTML file.</p>
 <p>Another technology that I used is Socket.IO. I encountered that problem of needing to refresh the page to see newest messages form other users. Thus, since socket.io supports real time and bi-directional communication between servers and users, all users can view messages from other users without the need to refresh.</p>
+<br>
 
 **Components and Interactions**
 <p>My web app is comprised of two main parts:</p>
@@ -16,6 +17,7 @@
     <li>HTML templates (feed.html, login.html, sign.html): These files store the front-end interface that users interact with and Javascript code that connects with the server.</li>
     <li>Back-end file (chatroom.py): This file stores functions that operate the front-end interface for users, such as redirecting users to signup, login, see and post in their feed and logout.</li>
 </ul>
+<br>
 
 **Requirements**
 <p>Requirement 1: Users should be able to type a message and post it to the message board.</p>
@@ -32,9 +34,11 @@
 <ul>
     <li>Since users can sign up under a username, and all their messages are stored in a list, all past messages stored in list will be shown. SocketIO also allows users to see other users' messages the instant they send it without refreshing.</li>
 </ul>
+<br>
 
 **Additional Features**
 <p>Another feature that I implement is allowing users to signup, login, logout and post under a username, so users can see who sent the messages.</p>
+<br>
 
 **How to Install and Run the Project**
 - IDE: VSCode
