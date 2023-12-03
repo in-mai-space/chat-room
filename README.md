@@ -48,7 +48,7 @@
 <br>
 
 <h2>Installation and Running the Program</h2>
-<h5>Installation Guide</h5>
+<h3>Installation Guide</h5>
 <ol>
     <li>Install an IDE (e.g. VSCode)</li>
     <li>Install Python https://www.python.org/downloads/</li>
@@ -60,7 +60,7 @@
     </ul>
 </ol>
 
-<h5>How to Run the Program</h5>
+<h3>How to Run the Program</h5>
 <ol>
     <li>Download or clone the project from the repository</li>
     <li>Run chatroom.py in IDE (e.g. VSCode)</li>
