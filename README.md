@@ -52,10 +52,12 @@
 <ol>
     <li>Install an IDE (e.g. VSCode)</li>
     <li>Install Python https://www.python.org/downloads/</li>
-    <li>can either install these in terminal for Mac, or create (python -m venv venv) and activate a new environment (venv\Scripts\activate) in terminal of IDE</li>
-    <li>Install Flask: pip install -U Flask</li>
-    <li>Install Socket.io: pip install flask-socketio</li>
-    <li>Install jinjja2: pip install -U Jinja2</li>
+    <li>can either install using the commands below in terminal for Mac, or create (python -m venv venv) and activate a new environment (venv\Scripts\activate) in terminal of IDE, then run the commands in the IDE terminal</li>
+    <ul>
+        <li>Install Flask command: pip install -U Flask</li>
+        <li>Install Socket.io command: pip install flask-socketio</li>
+        <li>Install jinjja2 command: pip install -U Jinja2</li>
+    </ul>
 </ol>
 
 <h5>How to Run the Program</h5>
