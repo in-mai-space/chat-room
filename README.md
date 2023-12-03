@@ -62,8 +62,8 @@
 
 <h5>How to Run the Program</h5>
 <ol>
-    <li>download or clone the project from the repository</li>
-    <li>run chatroom.py in IDE (e.g. VSCode)</li>
-    <li>access app through the link: http://10.110.197.207:8123</li>
+    <li>Download or clone the project from the repository</li>
+    <li>Run chatroom.py in IDE (e.g. VSCode)</li>
+    <li>Access app through the link: http://10.110.197.207:8123</li>
 </ol>
 
