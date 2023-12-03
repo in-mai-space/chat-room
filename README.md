@@ -5,7 +5,7 @@
 <ul>
 <li>Languages: Python, Javascript, HTML</li>
 <li>Framework: Flask, Bootstrap</li>
-<li>Other Tools: Socket.IO library, Jinjja2 web template</li>
+<li>Other Tools: Socket.IO library, jQuery library, Jinjja2 web template</li>
 </ul>
 <p>I used Python since it is a beginner friendly language that I am more familiar with, and Flask framework which is helpful and simple to build small web apps. While, Bootstrap allows me to modify the front-end design from libraries without building CSS from scartch. Jinjja2 web template is a way to incorporate Python code into HTML file.</p>
 <p>Another technology that I used is Socket.IO. I encountered that problem of needing to refresh the page to see newest messages form other users. Thus, since socket.io supports real time and bi-directional communication between servers and users, all users can view messages from other users without the need to refresh.</p>
@@ -17,6 +17,13 @@
     <li>HTML templates (feed.html, login.html, sign.html): These files store the front-end interface that users interact with and Javascript code that connects with the server.</li>
     <li>Back-end file (chatroom.py): This file stores functions that operate the front-end interface for users, such as redirecting users to signup, login, see and post in their feed and logout.</li>
 </ul>
+<p>session['logged_in'] is used to store a key-value pair in the session. When a user successfully logs in, session['logged_in'] is set to True. When the user logs out (session.pop('logged_in', None)), this key is removed from the session, signifying that the user is no longer logged in.</p>
+<p>When a user is in session, they will be redirect to login.html page. If users have not signed up, they can choose to signup for a new account. When users are logged in, they have an option to either log out or view their feed, which will redirect them to feed.html page.</p>
+<p>To sign up, users are redirected to signup.html. As users enter the info, POST method is used to pull the data users enter to the chatroom.py to protect their data since it will not display private information on the link. It will append the username and password to two lists. To log in, users are redirected to login.html, where their information is also pulled using POST method and will be compared to data in existing lists. If the password and username matches, users log in successfully and will have option to view their feed or log out.</p>
+<p>There are a few errors users might encounter, such as signing up with a username that already exists, or logging in with wrong username or password. An error message will appear to tell users what the error if the conditions above are not met.</p>
+<p>In chatroom.py, view_feed() handles HTTP requests to display and update a feed. It updates the message list when a POST request is made, and emits a new message to the Socket.IO server. handle_message() is a Socket.IO event handler that responds to the 'message' event. When this event is triggered, it updates the message list and emits an 'update' event to the connected clients. From client-side (Javascript code in feed.html), when user connects, it will wait for message sent by the server, then div is created to display received messages and add on to the webpage.</p>
+<p>The second function in Javascript in feed.html adds a listener to the form user is entering message to count the length. If the length exceeds the maxchar, it prevents further input by returning false. If the length is greater than 0 but does not exceed the limit, it shows the remaining characters.</p>
+
 <br>
 
 <h2>Requirements</h2>
