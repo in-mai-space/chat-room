@@ -14,7 +14,7 @@
 <h2>Components and Interactions</h2>
 <p>My web app is comprised of two main parts:</p>
 <ul>
-    <li>HTML templates (feed.html, login.html, sign.html): These files store the front-end interface that users interact with and Javascript code that connects with the server.</li>
+    <li>HTML templates (feed.html, login.html, signup.html): These files store the front-end interface that users interact with and Javascript code that connects with the server.</li>
     <li>Back-end file (chatroom.py): This file stores functions that operate the front-end interface for users, such as redirecting users to signup, login, see and post in their feed and logout.</li>
 </ul>
 <p>session['logged_in'] is used to store a key-value pair in the session. When a user successfully logs in, session['logged_in'] is set to True. When the user logs out (session.pop('logged_in', None)), this key is removed from the session, signifying that the user is no longer logged in.</p>
