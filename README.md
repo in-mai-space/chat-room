@@ -1,4 +1,4 @@
-# chat-room: Technical Challenge for Code4Community
+# chat-room
 
 <h2>Overview</h2>
 <p>This is a chat room that allows users to sign up, log in, log out, post under a username and chat with other users from different devices.</p>
