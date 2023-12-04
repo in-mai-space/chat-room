@@ -21,8 +21,8 @@
 <p>When a user is in session, they will be redirect to login.html page. If users have not signed up, they can choose to signup for a new account. When users are logged in, they have an option to either log out or view their feed, which will redirect them to feed.html page.</p>
 <p>To sign up, users are redirected to signup.html. As users enter the info, POST method is used to pull the data users enter to the chatroom.py to protect their data since it will not display private information on the link. It will append the username and password to two lists. To log in, users are redirected to login.html, where their information is also pulled using POST method and will be compared to data in existing lists. If the password and username matches, users log in successfully and will have option to view their feed or log out.</p>
 <p>There are a few errors users might encounter, such as signing up with a username that already exists, or logging in with wrong username or password. An error message will appear to tell users what the error if the conditions above are not met.</p>
-<p>In chatroom.py, view_feed() handles HTTP requests to display and update a feed. It updates the message list when a POST request is made, and emits a new message to the Socket.IO server. handle_message() is a Socket.IO event handler that responds to the 'message' event. When this event is triggered, it updates the message list and emits an 'update' event to the connected clients. From client-side (Javascript code in feed.html), when user connects, it will wait for message sent by the server, then div is created to display received messages and add on to the webpage.</p>
-<p>The second function in Javascript in feed.html adds a listener to the form user is entering message to count the length. If the length exceeds the maxchar, it prevents further input by returning false. If the length is greater than 0 but does not exceed the limit, it shows the remaining characters.</p>
+<p>In chatroom.py, view_feed() handles HTTP requests to display and update a feed. It updates the message list by receiving what the users enter when a POST request is made, and emits a new message to the Socket.IO server. handle_message() is a Socket.IO event handler that responds to the 'message' event. When this event is triggered by view_feed(), it updates the message list and emits an 'update' event to the connected clients. From client-side (Javascript code in feed.html), when user connects, it will wait for message sent by the server, then div is created to display received messages and add on to the webpage. These three components keep working in a cycle to ensure communication between users and the server. </p>
+<p>The second function in Javascript in feed.html adds a listener to the form user is entering message in to count the length. If the length of the string that users enter exceeds the maxchar, it prevents further input by returning false. If the length is greater than 0 but does not exceed the limit, it shows the remaining characters.</p>
 
 <br>
 
@@ -56,7 +56,7 @@
     <ul>
         <li>Install Flask command: pip install -U Flask</li>
         <li>Install Socket.io command: pip install flask-socketio</li>
-        <li>Install jinjja2 command: pip install -U Jinja2</li>
+        <li>Install jinja2 command: pip install -U Jinja2</li>
     </ul>
 </ol>
 
