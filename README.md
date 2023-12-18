@@ -64,6 +64,6 @@
 <ol>
     <li>Download or clone the project from the repository</li>
     <li>Run chatroom.py in IDE (e.g. VSCode)</li>
-    <li>Access app through the link: http://10.110.197.207:8123</li>
+    <li>Access app through one of the link given when running the app</li>
 </ol>
 
